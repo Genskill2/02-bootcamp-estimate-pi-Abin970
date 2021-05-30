@@ -37,7 +37,7 @@ def wallis(n):
     for i in range(1,n+1):
        v *= (4*float(i)**2)/(4*i**2-1)
 
-    return v
+    return 2.0*v
     
 def monte_carlo(n):
     c=0
@@ -48,5 +48,4 @@ def monte_carlo(n):
        i=i-1
        if (x**2+y**2)**.5 <1:
            c=c+1
-           print(i,"\n")
     return 4.0*(float(c)/n)
