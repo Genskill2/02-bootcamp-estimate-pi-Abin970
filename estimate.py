@@ -35,7 +35,7 @@ if __name__ == "__main__":
 def wallis(n):
     v=1
     for i in range(1,n+1):
-       v *= (4*i**2)/(4*i**2-1)
+       v *= (4*float(i)**2)/(4*i**2-1)
 
     return v
     
